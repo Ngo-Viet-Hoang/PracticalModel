@@ -3,4 +3,36 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <servlet>
+        <servlet-name>AddPhoneServlet</servlet-name>
+        <servlet-class>com.example.practicalmodel.controller.AddPhoneServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPhoneServlet</servlet-name>
+        <url-pattern>/admin/phones/create</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>PhoneListServlet</servlet-name>
+        <servlet-class>com.example.practicalmodel.controller.PhoneListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PhoneListServlet</servlet-name>
+        <url-pattern>/admin/phones/list</url-pattern>
+    </servlet-mapping>
+<!--    <servlet>-->
+<!--        <servlet-name>UpdateFoodServlet</servlet-name>-->
+<!--        <servlet-class>com.example.foodmodel.controller.food.UpdateFoodServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>UpdateFoodServlet</servlet-name>-->
+<!--        <url-pattern>/admin/foods/update</url-pattern>-->
+<!--    </servlet-mapping>-->
+<!--    <servlet>-->
+<!--        <servlet-name>DeleteFoodServlet</servlet-name>-->
+<!--        <servlet-class>com.example.foodmodel.controller.food.DeleteFoodServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>DeleteFoodServlet</servlet-name>-->
+<!--        <url-pattern>/admin/foods/delete</url-pattern>-->
+<!--    </servlet-mapping>-->
 </web-app>
